@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+}
+
+.partesinistra, .partedestra {
+    float: left;
+    height: 100%;
+    background-color: darkgrey;
+}
+.partesinistra {
+    width: 40%;
+}
+.partedestra {
+    width: 60%;
+}
+.partesinistra ul  {
+    width: 400px;
+    padding: 0px;
+    margin: 20px;
+    display: block;
+}
+.partedestra ul {
+    width: 800px;
+    padding: 0px;
+    margin: 20px;
+    display: block;
+
+}
+.partesinistra li, .partedestra li {
+    display: inline-block;
+}
+.partesinistra a, .partedestra a {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 12px;
+}
