@@ -1,122 +1,106 @@
 <!DOCTYPE html>
-<html lang="it" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="main.css">
-        <!-- Latest compiled and minified CSS -->
-
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-
- <!-- Optional theme -->
-
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
-
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-
-
-        <title>revolut</title>
-    </head>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- richiamo fontawesome -->
+    <script src="https://kit.fontawesome.com/15ec4d483d.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Revolut NavBar</title>
+  </head>
     <body>
-        <header>
-            <div class="partesinistra">
-                <ul>
-                    <li>
-                        <a id="titolo" href="#"> <b>REVOLUT</b> </a>
-                    </li>
-                    <li>
-                        <a id="titolo2" href="#"> <b>Personal</b></a>
-                    </li>
-                    <li>
-                        <a id="titolo3" href="#"> <b>Business</b></a>
-                    </li>
+      <main>
+        <!-- barra fissa top -->
+        <div class="navbarTop">
 
-                </ul>
+          <img id="logoR" src="img/revolutlogo.png" alt="logo">
+          <div class="coppiaNextLogo">
+            <span> <a href="#"> PERSONAL</a></span>
+            <span> <a href="#">BUSINESS </a></span>
+          </div>
 
+          <!-- gestione aspetto a risoluzioni grandi -->
+          <div class="menuLargo">
+            <ul>
+              <li>Pricing</li>
+              <li>Accounts
+                  <div class="sottomenuNascosto nascondi">
+                    <ul>
+                     
+                      <li><a href="#">Standard</a></li>
+                      <li>Premium</li>
+                      <li>Metal</li>
+                      <li>Junior</li>
+                    </ul>
+                  </div>
+              </li>
+              <li>Products
+                <div class="sottomenuNascosto nascondi">
+                  <ul>
+                  
+                    <li><a href="#">Money Transfers</a> </li>
+                    <li><a href="#">Send and Request Payments</a></li>
+                    <li><a href="#">Vaults</a></li>
+                    <li><a href="#">Budgeting</a></li>
+                    <li><a href="#">Perks</a></li>
+                    <li><a href="#">Cryptocurrency</a></li>
+                    <li><a href="#">Mobile Phone Insurance</a></li>
+                    <li><a href="#">Overseas Medical Insurance</a></li>
+                    <li><a href="#">Apple Pay</a></li>
+                    <li><a href="#">Donations</a></li>
+                    <li><a href="#">Commodities</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>Company
+                <div class="sottomenuNascosto nascondi">
+                  <ul>
+                    <li>Standard</li>
+                    <li>Premium</li>
+                    <li>Metal</li>
+                    <li>Junior</li>
+                  </ul>
+                </div>
+              </li>
+              <li>Help
+                <div class="sottomenuNascosto nascondi">
+                  <ul>
+                    <li>Standard</li>
+                    <li>Premium</li>
+                    <li>Metal</li>
+                    <li>Junior</li>
+                  </ul>
+                </div>
+              </li>
+              
+              <li> </li>
+            </ul>
+            <button type="button" name="button">Get the App</button>
+            <i class="fas fa-bars"></i>
+          </div>
 
+          <!-- gestione comportamento a risoluzioni pi§ piccole -->
+          <div class="hamburgerMenu clearfix">
+            <i class="fas fa-times"></i>
+            <div>
+              <p> <a href="#"> PERSONAL</a></p>
+              <p> <a href="#">BUSINESS </a></p>
             </div>
+            <ul>
+              <li>Pricing</li>
+              <li>Accounts</li>
+              <li>Products</li>
+              <li>Company</li>
+              <li>Help</li>
+              <li> <button type="button" name="button">Get the App</button> </li>
+            </ul>
+          </div>
 
-            <div class="partedestra">
+        </div>
 
-                <ul>
-                    <li>
-                        <a href="#"> <b>Pricings</b> </a>
-
-                    </li>
-                    <li>
-
-                        <div class="dropdown">
-                      <a href="#"class="dropbtn"> <b>Account</b></a>
-                      <div class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                      </div>
-                    </div>
-
-                    </li>
-                    <li>
-                        <div class="dropdown">
-                      <a href="#"class="dropbtn"> <b>Products</b></a>
-                      <div class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                      </div>
-                    </div>
-
-
-                    </li>
-                    <li>
-                        <div class="dropdown">
-                      <a href="#"class="dropbtn"> <b>Company</b></a>
-                      <div class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                      </div>
-                    </div>
-
-
-                    </li>
-                    <li>
-                        <div class="dropdown">
-                      <a href="#"class="dropbtn"> <b>Help</b></a>
-                      <div class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                      </div>
-                    </div>
-
-
-                    </li>
-                    <li>
-                        <button id="bottone" type="button" name="button"> <b> Get the App</b></button>
-                        <!-- hamburger -->
-                        <div class="down">
-
-                        <button id="ghost" type="button" name="button"> <i class="fa fa-bars"></i>
-
-                          <div class="items-content">
-
-                             <a class="ttt" href="#"> aa</a>
-                             <a class="ttt" href="#"> bb</a>
-                             <a class="ttt" href="#">cc</a>
-                             <a class="ttt" href="#">dd</a>
-                             <a class="ttt" href="#">ee</a>
-                             <a class="ttt" href="#">ff</a>
-
-                          </div>
-                        </div>
-                        </button>
-
-
-        </header>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script type="text/javascript" src="my.js">
-
-        </script>
-
+      </main>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="my.js"> </script>
     </body>
 </html>
